@@ -24,7 +24,8 @@ The architectural basics are broken down into the following sections:
 
 ### Background & Motivation
 
-Current [Ekonavi.com](https://ekonavi.com) site was built using PHP & MySQL and has no framework (build using a 'roll your own' method). Current [PageSpeed Insights](https://pagespeed.web.dev/) scores are as low as 12 out of 100.
+Current [Ekonavi.com](https://ekonavi.com) site was built using PHP & MySQL and has no framework (build using a 'roll your own' method). Current [PageSpeed Insights](https://pagespeed.web.dev/) scores are as low as [15 out of 100](https://user-images.githubusercontent.com/9093152/157125334-9e32d878-56b6-4ce2-a3b1-7041b9ebdb4a.png)
+
 
 To grow, the site will need to be modernized and agile. We will use this opportunity to create an open platform and a framework for future feature iterations and content management.
 
@@ -34,9 +35,9 @@ To grow, the site will need to be modernized and agile. We will use this opportu
 > Speed at all costs. Load times and the 'quickness' of interactions will be weighted greater than any other factor for decisions in architecture and UX. All speed tests for page load times must be 90 or greater. All interactions must be sub-one-second for a 4G device. Large percentage of users will be in rural areas; static assets, functions, and data sources at the edge should be utilized.
 
 * Agile & Modular Dev
-> Think micro-services and independent components that each encapsulate their intended use and can plug-and-play into the system as needed. Each architectural piece should be able to be swapped out seamlessly or deployed in a different environment without needed to be refactored. 
-> The framework will define the interfacing surface for each aspect, such as hosting, edge functions, data source adaptors, css pre-processors, content management system and other tooling. 
-> Theming and localization should be managed in a separate fashion so that core framework updates can be deployed without overwriting frame instances using different themes or languages.
+> * Think micro-services and independent components that each encapsulate their intended use and can plug-and-play into the system as needed. Each architectural piece should be able to be swapped out seamlessly or deployed in a different environment without needed to be refactored. 
+> * The framework will define the interfacing surface for each aspect, such as hosting, edge functions, data source adaptors, css pre-processors, content management system and other tooling. 
+> * Theming and localization should be managed in a separate fashion so that core framework updates can be deployed without overwriting frame instances using different themes or languages.
 > No lock-in. The framework should be able to be easily migrated to other hosting platforms, use other database back-ends, other web3 services, other css pre-processes, and even be built with other Javascript frameworks.
 
 * Open-source
