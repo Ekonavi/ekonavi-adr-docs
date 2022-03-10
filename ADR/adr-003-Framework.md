@@ -40,7 +40,7 @@ Use most widely used framework.
 
 
 ### Positive
-
+React most widely used Javascript framework. Codebase has potential to port to React Native for a native mobile app.
 
 ### Negative
 Framework structures are specific. If React-based framework is chosen, it would need to be rewritten to change to an alternative.

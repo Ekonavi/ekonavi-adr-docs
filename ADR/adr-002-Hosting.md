@@ -32,7 +32,7 @@ Instead, modern hosting frameworks use static assets deployed to all edge server
 Speed is the main objective. Use market leader with largest distributed network, largest feature set, and lowest costs.
 
 ### Timeline
-72 Days
+14 Days
 
 ## Decision
 Cloudflare has largest network, highest number edge location servers in over 250 cities globally to serve low-latency content to clients in all regions.

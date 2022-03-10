@@ -19,6 +19,7 @@ DRAFT Not Implemented
 ## Proposal 
 
 ### Timeline
+July 1st, 2022 Launch Date
 
 ## Decision
 
