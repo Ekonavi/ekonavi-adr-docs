@@ -50,16 +50,16 @@ Specifics covered in ADR 001-006
 Research frameworks and tools to meet goals. Search and test products and designs, use what is available, build what is needed.
 
 ### Timeline
-72 Days
+July 1st, 2022 Launch Date
 
 ## Decision
 Specifics covered in ADR 001-006
 
 ## Consequences
-> This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences, but all of them affect the team and project in the future.
+N/A
 
 ### Backwards Compatibility
-> All ADRs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The ADR must explain how the author proposes to deal with these incompatibilities. ADR submissions without a sufficient backwards compatibility treatise may be rejected outright.
+N/A
 
 ### Positive
 N/A
@@ -74,6 +74,5 @@ N/A
 Specifics covered in ADR 001-006
 
 ## References
-https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md
-
-https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/README.md
+* [https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md](https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md)
+* [https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/README.md](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/README.md)
