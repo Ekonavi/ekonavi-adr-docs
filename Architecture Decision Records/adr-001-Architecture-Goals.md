@@ -56,8 +56,8 @@ Expanding upon goals:
 * UX Clarity
 > Simple UX with large texts and large clickable areas will be utilized. Long processes will be broken down into steps that fit well within a single mobile screen. Help and tool tips should be available on all screens.
 
-* Community Building
-> Ease of use and user engagement are high priorities. Build upon current user-base, offering a better UX and new features.
+* Incentivized Community Building
+> Ease of use and user engagement are high priorities. Build upon current user-base, offering a better UX and new features, including incentives for participation and positive action that impacts the state of the real world.
 
 ### Options Considered
 Specifics covered in ADR 002-006
@@ -84,3 +84,5 @@ N/A
 ## References
 * [https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md](https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md)
 * [https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/README.md](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/README.md)
+* [https://github.blog/2020-08-13-why-write-adrs/](https://github.blog/2020-08-13-why-write-adrs/)
+* [https://adr.github.io/](https://adr.github.io/)
