@@ -7,15 +7,15 @@
 DRAFT Not Implemented
 
 ## Abstract
-Selecting a modern, CDN, CI/CD, Repo, Edge-worker, Edge-data driven host underpins the ability to achieve application goals. Low cost of entry plus easy scalability to support large future user-base.
+Selecting a modern, CDN, CI/CD, Repo, Edge-worker, Edge-data driven host underpins the ability to achieve application goals. Low cost of entry plus easy scalability to support a large, future user base.
 
 ### Goals
 * Use CDN Edge Hosted Static Assets
 * Do not use traditionally hosted single server instance (i.e. Heroku, Digital Ocean, Linode)
-* No mono-systems. Separate concerns as modular micro0-services.
+* No mono-systems. Separate concerns as modular micro-services.
 
 ## Context
-Traditional hosting solutions provide vertical or horizontal scaling, requiring the increase of resources of a particular server, or the replication of server instances (MAM)
+Traditional hosting stack solutions provide vertical or horizontal scaling, requiring the increase of resources of a particular server, or the replication of server instances.
 
 Instead, modern hosting frameworks use static assets deployed to all edge servers and allow unlimited resources under sudden peak loads. This approach is referred to as a [JAMStack](https://jamstack.org/why-jamstack/) (Javascript, APIs & Markup ) and provides better security, scaling, performance, maintainability, portability, and devX. 
 
@@ -49,17 +49,17 @@ Interesting Notes: CloudFlare is continuing to develop [Mutual TLS with gRPC](ht
 
 ### Positive
 * Modern. Fast. Static. Static sites load fast, can be deployed globally. 
-* Dynamic content progressively loaded via API and Serverless Functions, infinite scalability. 
-* Practically zero server maintenance nor server load considerations.
+* Dynamic content progressively loaded via API and Serverless Functions, 'infinite' scalability. 
+* Practically zero server maintenance nor server load considerations. Can focus more on UX and conversion metrics.
 
 ### Negative
 * Up-front build times. Site must be built up-front before each deployment, not dynamically rendered with each client request. Some of these effects can be mitigated with partial and targeted builds.
-* Intricate balancing between application view frame and dynamic content.
+* Intricate balancing needed between application view frame and dynamically rendered content in loaded components.
 
 ### Neutral
-* Vendor trust. Like any affordable web hosting solution on an internet backbone, operations rely on vendor technical uptime as well as geopolitical influences.
+* Vendor trust. Like any affordable web hosting solution on an internet backbone, operations rely on vendor technical uptime and could be potentially subject to geopolitical influences.
 * However, because of the modular nature of the design and repo managed content, deploying to alternative CDN hosted options should prove to be as easy as connecting Github repo and updating DNS.
-* Will need to depend on caching accuracy and freshness of content at the edges. CDN technology has been used for many years and is considered a mature technology. In addition, deployment framework provides cache-busting techniques with unique asset hashes.
+* Will need to depend on caching accuracy and freshness of content at the edges. CDN technology has been used for many years and is considered a mature technology. In addition, deployment framework provides cache-busting techniques by applying unique asset hashes.
 * MailServer will need to be run as a separate MX service apart from domain A records. Email hosting needs to remain with current host, or moved to host that specializes in just email hosting.
 
 ## Further Discussions
