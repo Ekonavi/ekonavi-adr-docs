@@ -19,21 +19,25 @@ The architectural design of a system is tantamount to functionality, usability, 
 ## Context
 The architectural basics are broken down into the following sections:
 
+1) Front-end project development can begin with these decisions:
 * [Hosting](adr-002-Hosting.md)
 * [Framework](adr-003-Framework.md)
 * [Domain Structure](adr-004-Domain-Structure.md)
 * [SEO & Localization](adr-005-SEO-Localization.md)
 * [Theming & Design](adr-006-Theming-Design.md)
 
-Front-end project development can begin with future ADRs TBD:
+2) Back-end project development can begin with future ADRs TBD:
 * Content Management
 * Component Strategy
 * Authentication & Permissions
 * Database Implementations
 * API Structure
-* Web3 Features 1.0
-* Marketplace Launch
 
+3) Final ADRs needing development pre-launch:
+* Web3 Features 1.0
+* Marketplace Features & Launch Strategy
+
+#### Background & Motivation
 Current [Ekonavi.com](https://ekonavi.com) site was built using PHP & MySQL and has no framework (build using a 'roll your own' method). Current [PageSpeed Insights](https://pagespeed.web.dev/) scores are as low as [15 out of 100](https://user-images.githubusercontent.com/9093152/157125334-9e32d878-56b6-4ce2-a3b1-7041b9ebdb4a.png)
 
 To grow, the site will need to be modernized and agile. We will use this opportunity to create an open platform and a framework for future feature iterations and content management.
@@ -60,7 +64,7 @@ Expanding upon goals:
 > Ease of use and user engagement are high priorities. Build upon current user-base, offering a better UX and new features, including incentives for participation and positive action that impacts the state of the real world.
 
 ### Options Considered
-Specifics covered in ADR 002-006
+Front-end Specifics covered in ADR 002-006
 
 ## Decision 
 Research frameworks and tools to meet goals. Search and test products and designs, use what is available, build what is needed.
