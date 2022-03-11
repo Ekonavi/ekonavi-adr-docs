@@ -14,6 +14,7 @@ The architectural design of a system is tantamount to functionality, usability, 
 * Agile & Modular Dev
 * Open-source
 * UX Clarity
+* Community Building
 
 ## Context
 The architectural basics are broken down into the following sections:
@@ -24,7 +25,7 @@ The architectural basics are broken down into the following sections:
 * [SEO & Localization](adr-005-SEO-Localization.md)
 * [Theming & Design](adr-006-Theming-Design.md)
 
-TBD:
+Front-end project development can begin with future ADRs TBD:
 * Content Management
 * Component Strategy
 * Authentication & Permissions
@@ -54,6 +55,9 @@ Expanding upon goals:
 
 * UX Clarity
 > Simple UX with large texts and large clickable areas will be utilized. Long processes will be broken down into steps that fit well within a single mobile screen. Help and tool tips should be available on all screens.
+
+* Community Building
+> Ease of use and user engagement are high priorities. Build upon current user-base, offering a better UX and new features.
 
 ### Options Considered
 Specifics covered in ADR 002-006

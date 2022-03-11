@@ -34,7 +34,7 @@ NextJS is [based on ReactJS](https://www.npmtrends.com/@angular/core-vs-react-vs
 
 For long-term maintainability and interoperability, it is almost certain that there will always be React developers available to maintain and contribute to project.
 
-NextJS 9.3 has new SSG features (getStaticPaths,getStaticProps) that allow the combination of SSR with SSG.
+NextJS 9.3 has new SSG features (getStaticPaths,getStaticProps) that allow the combination of SSR with SSG. Plus [SWR hook](https://swr.vercel.app/) now available for dynamic profile content.
 
 Gatsby, even though feature-rich and more of a turn-key solution, will likely not provide the openness and flexibility needed for advanced customizations. Gatsby was designed primarily for static blogs.
 

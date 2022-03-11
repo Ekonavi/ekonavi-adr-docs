@@ -9,15 +9,13 @@ DRAFT Not Implemented
 ## Abstract
 A branded, well-designed and marketable product is essential for user adoption and user experience.
 
-## Context
-
 ### Goals
 * Responsive CSS with media queries system
 * Smallest CSS filesize 
 * Base view frame with customizable branding (default, white-label theme)
 * Global theming and sizing variables
 
-### Background & Motivation
+## Context
 
 ### Options Considered
 * Tailwind
@@ -25,12 +23,9 @@ A branded, well-designed and marketable product is essential for user adoption a
 * Material
 * No Framework (Pure CSS or SCSS)
 
-## Proposal 
-
-### Timeline
-July 1st, 2022 Launch Date
-
 ## Decision
+* Tailwind
+
 Tailwind CSS only needs the base stylesheet file, which amounts up to 27kb making it lighter (unused styles can also be purged).
 
 Bootstrap has four files that are required to include in your project to get the full benefit of the CSS Framework. The total size of these files is 308.25kb including, jQuery, Popper.js, Bootstrap JS, and the main Bootstrap CSS file.

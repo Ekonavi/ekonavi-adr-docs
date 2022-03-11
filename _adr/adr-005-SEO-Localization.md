@@ -38,29 +38,38 @@ And from there, categorized the user content, such as example.com/username/event
 
 This pattern is common in the most successful networks and may come as an expected feature. However, careful consideration and planning of url structures is needed, in order to avoid collisions with usernames.
 
-Perhaps, a pre-written reserved list of important keywords should be created prior to launch, to prevent users from using one of these words as a username.
+A pre-written reserved list of important keywords should be created prior to launch, to prevent users from using one of these words as a username.
 
 For example, these are some of words that would need to be reserved in each language:
-* about
-* help
-* shop
-* services
-* products ...
+* /about
+* /admin
+* /explore
+* /help
+* /wallet
+* /shop
+* /market
+* /services
+* /products ...
 
 ### Options Considered
-* Username at web root per profile, manage a reserved words list
-* Username at a /profile root
+* Usernames at web root per profile (example.com/username), manage a reserved words list
+* Usernames at a profile root (example.com/p/username)
 
 ## Decision
-* Username at web root per profile, manage a reserved words list
+* Usernames at web root per profile (example.com/username), manage a reserved words list
 
 ## Consequences
 
 ### Backwards Compatibility
+None. Once site is launched using strategy, there is no easy way to go back.
 
 ### Positive
+* User ownership first
+* Ease of sharing user content / profile
+* SEO keywords related to site content reserved and pre-planned
 
 ### Negative
+* Need to create reserved word list
 
 ### Neutral
 
