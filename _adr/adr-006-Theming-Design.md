@@ -15,6 +15,9 @@ DRAFT Not Implemented
 ### Goals
 
 ### Options Considered
+* Tailwind
+* Bootstrap
+* Material
 
 ## Proposal 
 
