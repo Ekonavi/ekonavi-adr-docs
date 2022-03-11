@@ -9,17 +9,15 @@ DRAFT Not Implemented
 ## Abstract
 Selecting a modern, CDN, CI/CD, Repo, Edge-worker, Edge-data driven host underpins the ability to achieve application goals. Low cost of entry plus easy scalability to support large future user-base.
 
-## Context
+### Goals
+* Use CDN Edge Hosted Static Assets
+* Do not use traditionally hosted single server instance (i.e. Heroku, Digital Ocean, Linode)
+* No mono-systems. Separate concerns as modular micro0-services.
 
-### Background & Motivation
+## Context
 Traditional hosting solutions provide vertical or horizontal scaling, requiring the increase of resources of a particular server, or the replication of server instances (MAM)
 
 Instead, modern hosting frameworks use static assets deployed to all edge servers and allow unlimited resources under sudden peak loads. This approach is referred to as a [JAMStack](https://jamstack.org/why-jamstack/) (Javascript, APIs & Markup ) and provides better security, scaling, performance, maintainability, portability, and devX. 
-
-### Goals
-* Use CDN Edge Hosted Static Assets
-* Do not use traditionally hosted single server (i.e. Heroku, Digital Ocean, Linode)
-* No mono-systems. Separate concerns as module services.
 
 ### Options Considered
 * CloudFlare
@@ -28,13 +26,11 @@ Instead, modern hosting frameworks use static assets deployed to all edge server
 * Fastify
 * Vercel
 
-## Proposal 
+## Decision
+* CloudFlare
+
 Speed is the main objective. Use market leader with largest distributed network, largest feature set, and lowest costs.
 
-### Timeline
-14 Days
-
-## Decision
 Cloudflare has largest network, highest number edge location servers in over 250 cities globally to serve low-latency content to clients in all regions.
 
 CloudFlare Pages uses a github based workflow that provides JS frameworks built at the edge with npm/yarn/webpack.
@@ -46,33 +42,35 @@ CloudFlare KV Store allows for database connections at the edge for fast storing
 Interesting Notes: CloudFlare is continuing to develop [Mutual TLS with gRPC](https://developers.cloudflare.com/api-shield/products/mtls/) support and [IPFS services](https://developers.cloudflare.com/distributed-web/ipfs-gateway/), which may prove useful for serving decentralized applications and connecting IoT devices.
 
 ## Consequences
-* Vendor trust. Like any affordable web hosting solution on an internet backbone, operations rely on vendor technical uptime as well as geopolitical influences.
-* However, because of the modular nature of the design and repo managed content, deploying to alternative CDN hosted options should prove to be as easy as connecting Github repo and updating DNS.
-* Will need to depend on caching accuracy and freshness of content at the edges. CDN technology has been used for many years and is considered a mature technology. In addition, deployment framework provides cache-busting techniques with unique asset hashes.
-* Build-times. Site must be built up-front before each deployment, not dynamically rendered with each client request. Some of this can be mitigated with partial and targeted builds.
-* MailServer will need to be run as a separate MX service apart from domain A records. Email hosting needs to remain with current host, or moved to host that specializes in just email hosting.
 
 ### Backwards Compatibility
 * New site could be deployed on a traditional, single server node. However, host would need to support a NodeJS runtime.
 * New site will not be compatible with traditional Apache/Nginx with PHP hosting.
 
 ### Positive
-Modern. Fast. Static. Static sites load fast, can be deployed globally. Dynamic content progressively loaded via API and Serverless Functions, infinite scalability. Practically zero server maintenance nor server load considerations.
+* Modern. Fast. Static. Static sites load fast, can be deployed globally. 
+* Dynamic content progressively loaded via API and Serverless Functions, infinite scalability. 
+* Practically zero server maintenance nor server load considerations.
 
 ### Negative
-Up-front build times. Intricate balancing between application view frame and dynamic content. 
+* Up-front build times. Site must be built up-front before each deployment, not dynamically rendered with each client request. Some of these effects can be mitigated with partial and targeted builds.
+* Intricate balancing between application view frame and dynamic content.
 
 ### Neutral
-N/A
+* Vendor trust. Like any affordable web hosting solution on an internet backbone, operations rely on vendor technical uptime as well as geopolitical influences.
+* However, because of the modular nature of the design and repo managed content, deploying to alternative CDN hosted options should prove to be as easy as connecting Github repo and updating DNS.
+* Will need to depend on caching accuracy and freshness of content at the edges. CDN technology has been used for many years and is considered a mature technology. In addition, deployment framework provides cache-busting techniques with unique asset hashes.
+* MailServer will need to be run as a separate MX service apart from domain A records. Email hosting needs to remain with current host, or moved to host that specializes in just email hosting.
 
 ## Further Discussions
-Advantages of [JAMStack](https://jamstack.org/).
 
 ## Test Cases
-CI/CD framework will provide for staging location for automated e2e testing prior to pushing to live site.
+* CI/CD framework will provide for staging location for automated e2e testing prior to pushing to live site.
+* Deploy and test performance of single page first to compared to current site, before proceeding to build-out entire system.
 
 ## References
-* https://developers.cloudflare.com/
-* https://www.cloudflare.com/network/
-* https://www.fastly.com/network-map/
-* https://blog.intricately.com/cdn-industry-trends-market-share-customer-size#:~:text=The%20top%20CDN%20providers%20by,to%20over%201%20million%20customers
+* [https://developers.cloudflare.com/](https://developers.cloudflare.com/)
+* [https://www.cloudflare.com/network/](https://www.cloudflare.com/network/)
+* [https://www.fastly.com/network-map/](https://www.fastly.com/network-map/)
+* [https://blog.intricately.com/cdn-industry-trends-market-share-customer-size](https://blog.intricately.com/cdn-industry-trends-market-share-customer-size)
+* [https://jamstack.org/](https://jamstack.org/)

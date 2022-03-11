@@ -9,62 +9,74 @@ DRAFT Not Implemented
 ## Abstract
 A strategy for domain structure and localization is needed.
 
-## Context
-
-### Background & Motivation
-
-Google recommends using different URLs for each language version of a page rather than using cookies or browser settings to adjust the content language on the page.
-
 ### Goals
 * Best Developer Experience
 * Best Content Creator/Writer Experience
 * Best SEO Strategy
 * Optionality and Flexibility in Localization
 
-### Options Considered
-* sub-domain per local (es.example.com)
-* sub-folder per local (example.com/es/)
-* cookie / session based local (not recommended)
+## Context
+Google recommends using different URLs for each language version of a page rather than using cookies or browser settings to adjust the content language on the page.
 
-## Proposal 
-Use sub-domain based localization, where both language, image, and features are separable by region. Main core of framework shares the same codebase, localization and customizations live in separate repo per site.
+### Options Considered
+* Subdomain per local (es.example.com)
+* Subfolder per local (example.com/es/)
+* Cookie / session based local (not recommended)
 
 Put the content of every language in a different subdomain option:
-**es.example.com**
-* Pros: Easy to set up, Can use Search Console geotargeting, Allows different server locations, Easy separation of sites
-* Cons: Users might not recognize geotargeting from the URL alone (is "es" the language or country?)
+#### es.example.com
+**PROS:** 
+* Easy to set up
+* Can use Search Console geotargeting
+* Allows different server locations
+* Easy separation of sites
+* URL keywords greater authority per domain
+**CONS:**
+* Users might not recognize geotargeting from the URL alone (is "es" the language or country?)
+* Sub-domains are more “separate” than a directory structure as far as content segmentation is concerned.
 
 Put the content of every language in a different subdirectory option:
-**example.com/es/**
-* Pros: Easy to set up, Can use Search Console geotargeting, Low maintenance (same host)
-* Cons: Users might not recognize geotargeting from the URL alone, Single server location, Separation of sites harder
+#### example.com/es/
+**PROS:** 
+* Easy to set up
+* Can use Search Console geotargeting, Low maintenance (same host)
+* Sub-directories may add to the overall authority of the entire site (the root domain)
+* Domain overall greater SEO authority
+**CONS:**
+* Users might not recognize geotargeting from the URL alone
+* Single server location
+* Separation of sites harder
 
-### Timeline
-July 1st, 2022 Launch Date
+## Decision 
+* Subdomain per local (es.example.com)
 
-## Decision
-Sub-domain per local (es.example.com).
+Use sub-domain based localization, where both language, image, and features are separable by region. Main core of framework shares the same codebase, localization and customizations live in separate repo per site.
+
+More strongly leaning towards separation of concerns at the root of the system. Tying shared framework code together with a well-designed deployment strategy, rather than trying to piece-together/manage this separation of content at the presentation layer.
 
 ## Consequences
-* Well-defined repo structure will need to be created and managed.
-* Each site will need hosting account.
 
 ### Backwards Compatibility
-Once site is launched with chosen domain structure, any future changes may incur some SEO penalties. 
+Once site is launched with chosen domain structure, any future changes may incur an SEO penalty. 
 
 ### Positive
-Utilizes separation of concerns, allows for highest flexibility of localized services. Best SEO performance. Better targeted updates and builds.
+* Utilizes separation of concerns
+* Allows for highest flexibility of localized services
+* Best SEO performance
+* Easier and more precise targeting for updates and builds
 
 ### Negative
-Complex deployment strategy will be needed to considered separation of core files and custom components, language files.
+* May need a complex deployment strategy to manage separation of core files vs custom theme, custom components, custom language files.
 
 ### Neutral
-Multiple sites to manage, but, separation of concerns.
+* Well-defined repo structure will need to be created and managed.
+* Each site will need separate hosting.
+* Multiple sites to manage, but: separation of concerns!
 
 ## Further Discussions
-Sub-directories may add to the overall authority of the entire site (root domain).
-Sub-domains are more “separate” than a directory structure as far as content segmentation is concerned.
-Querying for dynamic content? Share posts between locals?
+Querying for dynamic content? Sharing posts between locals? Auto-translate option.
+
+Hard to really gauge what method would give best SEO performance, power of multiple language specific domains vs. one domain having multiple languages. 
 
 ## Test Cases
 CI/CD framework will provide for staging location for automated e2e testing prior to pushing to live site.

@@ -9,23 +9,35 @@ DRAFT Not Implemented
 ## Abstract
 The architectural design of a system is tantamount to functionality, usability, costs, and flexibility over the life of the system.
 
-The architectural basics are broken down into the following sections:
-
-* Hosting
-* CI/CD
-* Framework
-* SEO & Localization
-* Content Management
-* Theming
+### Goals
+* Speed
+* Agile & Modular Dev
+* Open-source
+* UX Clarity
 
 ## Context
+The architectural basics are broken down into the following sections:
 
-### Background & Motivation
+* [Hosting](adr-002-Hosting.md)
+* [Framework](adr-003-Framework.md)
+* [Domain Structure](adr-004-Domain-Structure.md)
+* [SEO & Localization](adr-005-SEO-Localization.md)
+* [Theming & Design](adr-006-Theming-Design.md)
+
+TBD:
+* Content Management
+* Component Strategy
+* Authentication & Permissions
+* Database Implementations
+* API Structure
+* Web3 Features 1.0
+* Marketplace Launch
+
 Current [Ekonavi.com](https://ekonavi.com) site was built using PHP & MySQL and has no framework (build using a 'roll your own' method). Current [PageSpeed Insights](https://pagespeed.web.dev/) scores are as low as [15 out of 100](https://user-images.githubusercontent.com/9093152/157125334-9e32d878-56b6-4ce2-a3b1-7041b9ebdb4a.png)
 
 To grow, the site will need to be modernized and agile. We will use this opportunity to create an open platform and a framework for future feature iterations and content management.
 
-### Goals
+Expanding upon goals:
 * Speed
 > Speed at all costs. Load times and the 'quickness' of interactions will be weighted greater than any other factor for decisions in architecture and UX. All speed tests for page load times must be 90 or greater. All interactions must be sub-one-second for a 4G device. Large percentage of users will be in rural areas; static assets, functions, and data sources at the edge should be utilized.
 
@@ -44,19 +56,12 @@ To grow, the site will need to be modernized and agile. We will use this opportu
 > Simple UX with large texts and large clickable areas will be utilized. Long processes will be broken down into steps that fit well within a single mobile screen. Help and tool tips should be available on all screens.
 
 ### Options Considered
-Specifics covered in ADR 001-006
+Specifics covered in ADR 002-006
 
-## Proposal 
+## Decision 
 Research frameworks and tools to meet goals. Search and test products and designs, use what is available, build what is needed.
 
-### Timeline
-July 1st, 2022 Launch Date
-
-## Decision
-Specifics covered in ADR 001-006
-
 ## Consequences
-N/A
 
 ### Backwards Compatibility
 N/A
@@ -71,7 +76,6 @@ N/A
 N/A
 
 ## Further Discussions
-Specifics covered in ADR 001-006
 
 ## References
 * [https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md](https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/blob/docs/architecture/adr-template.md)
