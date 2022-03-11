@@ -7,17 +7,23 @@
 DRAFT Not Implemented
 
 ## Abstract
+A branded, well-designed and marketable product is essential for user adoption and user experience.
 
 ## Context
 
-### Background & Motivation
-
 ### Goals
+* Responsive CSS with media queries system
+* Smallest CSS filesize 
+* Base view frame with customizable branding (default, white-label theme)
+* Global theming and sizing variables
+
+### Background & Motivation
 
 ### Options Considered
 * Tailwind
 * Bootstrap
 * Material
+* No Framework (Pure CSS or SCSS)
 
 ## Proposal 
 
@@ -25,13 +31,29 @@ DRAFT Not Implemented
 
 ## Decision
 
+Tailwind CSS only needs the base stylesheet file, which amounts up to 27kb making it lighter (unused styles can also be purged).
+
+Bootstrap has four files that are required to include in your project to get the full benefit of the CSS Framework. The total size of these files is 308.25kb including, jQuery, Popper.js, Bootstrap JS, and the main Bootstrap CSS file.
+
+Although Bootstrap can save time upfront, it's easy to recognize a site which uses pre-defined Bootstrap (or Material) components.
+
+Websites created using Tailwind CSS are much more customizable.	Websites created with Bootstraps are known for their responsiveness and flawless design, but the looks are generic and similar.
+
+Tailwind CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness.	Sites created using Bootstrap follow the generic pattern that makes them look identical.
+
+For a unique, custom brand and best optimized file size, Tailwind will be used. 
+
 ## Consequences
+Project will be designed using the chosen framework, which will help to manage and organize styles and theming, however designers will need to learn to use Tailwind.
 
 ### Backwards Compatibility
+None.
 
 ### Positive
+Lightweight CSS Framework. Large and growing user base. Not a cookie-cutter design implementation.
 
 ### Negative
+Learning curve. More time to create custom design and components.
 
 ### Neutral
 N/A
@@ -39,5 +61,8 @@ N/A
 ## Further Discussions
 
 ## Test Cases
+Experiment with global level and component level css compiling and loading with base pages, themes, and components prior to replicating design system.
 
 ## References
+* [https://www.npmtrends.com/bootstrap-vs-material-vs-tailwindcss](https://www.npmtrends.com/bootstrap-vs-material-vs-tailwindcss)
+* [https://www.geeksforgeeks.org/tailwind-css-vs-bootstrap/](https://www.geeksforgeeks.org/tailwind-css-vs-bootstrap/)

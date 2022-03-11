@@ -16,7 +16,10 @@ A strategy for domain structure and localization is needed.
 Google recommends using different URLs for each language version of a page rather than using cookies or browser settings to adjust the content language on the page.
 
 ### Goals
-* Use CDN Edge Hosted Static Assets
+* Best Developer Experience
+* Best Content Creator/Writer Experience
+* Best SEO Strategy
+* Optionality and Flexibility in Localization
 
 ### Options Considered
 * sub-domain per local (es.example.com)
