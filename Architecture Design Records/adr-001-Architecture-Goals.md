@@ -26,16 +26,17 @@ The architectural basics are broken down into the following sections:
 * [SEO & Localization](adr-005-SEO-Localization.md)
 * [Theming & Design](adr-006-Theming-Design.md)
 
-#### 2. Back-end project development can begin with future ADRs TBD:
+#### 2. Back-end project development can begin after these TBD future ADRs:
 * Content Management
 * Component Strategy
 * Authentication & Permissions
 * Database Implementations
 * API Structure
 
-#### 3. Final ADRs needing development pre-launch:
-* Web3 Features 1.0
-* Marketplace Features & Launch Strategy
+#### 3. Final ADRs needing development and planning pre-launch:
+* Web3 Features 1.0 Design
+* New Website & Marketplace Features
+* Launch Strategy
 
 #### Background & Motivation
 Current [Ekonavi.com](https://ekonavi.com) site was built using PHP & MySQL and has no framework (build using a 'roll your own' method). Current [PageSpeed Insights](https://pagespeed.web.dev/) scores are as low as [15 out of 100](https://user-images.githubusercontent.com/9093152/157125334-9e32d878-56b6-4ce2-a3b1-7041b9ebdb4a.png).
