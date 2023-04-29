@@ -3,4 +3,4 @@
 * Built for speed and flexibility with modular, micro-service, JAMStack principles.
 * Separation of concerns for multi-branding, multi-language support.
 
-Platform online at: https://ekonavi.com
+## Platform online at: [https://ekonavi.com](https://ekonavi.com)
