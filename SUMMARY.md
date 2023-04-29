@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Ekonavi IMR Platform](README.md)
+* [Ekonavi Impact Marketplace Platform](README.md)
 * [Architecture Design Records](architecture-design-records/README.md)
   * [ADR 001: Architecture Goals](<Architecture Design Records/adr-001-Architecture-Goals.md>)
   * [ADR 002: Hosting](architecture-design-records/adr-002-hosting.md)
