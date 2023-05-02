@@ -23,5 +23,6 @@ Enable users to log-in and execute blockchain transactions using a offline signe
 * Keplr Vanilla [https://www.keplr.app/](https://www.keplr.app/)
 * thirdweb [https://thirdweb.com/](https://thirdweb.com/)
 * WalletConnect [https://walletconnect.com/](https://walletconnect.com/)
-* Web3Auth [https://web3auth.io/]
+* Web3Auth [https://web3auth.io/](https://web3auth.io/)
 * Alchemy Web3 Wallet Tools [https://www.alchemy.com/top/wallet-tools](https://www.alchemy.com/top/wallet-tools)
+
