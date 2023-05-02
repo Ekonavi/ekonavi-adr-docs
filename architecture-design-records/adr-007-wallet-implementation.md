@@ -25,3 +25,4 @@ Enable users to log-in and execute blockchain transactions using a offline signe
 * WalletConnect [https://walletconnect.com/](https://walletconnect.com/)
 * Web3Auth [https://web3auth.io/](https://web3auth.io/)
 * Alchemy Web3 Wallet Tools [https://www.alchemy.com/top/wallet-tools](https://www.alchemy.com/top/wallet-tools)
+
