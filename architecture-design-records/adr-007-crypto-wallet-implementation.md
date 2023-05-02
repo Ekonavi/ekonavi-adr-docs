@@ -1,7 +1,5 @@
 # ADR 007: Crypto Wallet Implementation
 
-## ADR 007: Crypto Wallet Implementation
-
 ### Changelog
 
 * 2023-05-02: Initial draft
