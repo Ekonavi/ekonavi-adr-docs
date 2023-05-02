@@ -9,5 +9,5 @@
   * [ADR 004: Domain Structure](architecture-design-records/adr-004-domain-structure.md)
   * [ADR 005: SEO & Localization](architecture-design-records/adr-005-seo-localization.md)
   * [ADR 006: Theming & Design](architecture-design-records/adr-006-theming-design.md)
-  * [ADR 007](architecture-design-records/adr-007.md)
-  * [ADR 008](architecture-design-records/adr-008.md)
+  * [ADR 007: Crypto Wallet Implementation](architecture-design-records/adr-007-crypto-wallet-implementation.md)
+  * [ADR 008: Smart Contract Architecture](architecture-design-records/adr-008-smart-contract-architecture.md)
