@@ -11,3 +11,4 @@
   * [ADR 006: Theming & Design](architecture-design-records/adr-006-theming-design.md)
   * [ADR 007: Crypto Wallet Implementation](architecture-design-records/adr-007-crypto-wallet-implementation.md)
   * [ADR 008: Smart Contract Architecture](architecture-design-records/adr-008-smart-contract-architecture.md)
+  * [ADR 009: Database Design for Reports](architecture-design-records/adr-009-database-design-for-reports.md)
