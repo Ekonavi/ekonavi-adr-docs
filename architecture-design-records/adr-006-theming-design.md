@@ -4,7 +4,7 @@
 * 2022-03-09: Initial draft
 
 ## Status
-DRAFT Not Implemented
+Implemented
 
 ## Abstract
 A regionally branded, well-designed and marketable product is essential for user adoption and user experience.
