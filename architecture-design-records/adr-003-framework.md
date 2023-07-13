@@ -4,7 +4,7 @@
 * 2022-03-05: Initial draft
 
 ## Status
-DRAFT Not Implemented
+Implemented
 
 ## Abstract
 Modern JS Frameworks allow for app-like in-browser experiences when deployed as PWAs (Progressive Web Apps). These frameworks, when built with modular, JAMStack principles implement solutions for interactive UX, SEO content management, and mobile plus desktop distribution using selective JS scripting and responsive CSS.
