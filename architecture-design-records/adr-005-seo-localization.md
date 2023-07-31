@@ -4,7 +4,7 @@
 * 2022-03-09: Initial draft
 
 ## Status
-DRAFT Not Implemented
+Implemented
 
 ## Abstract
 Based on ADR 004 Domain Structure, SEO and Localization strategies can be decided upon. 

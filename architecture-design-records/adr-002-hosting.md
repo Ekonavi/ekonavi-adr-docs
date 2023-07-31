@@ -4,7 +4,7 @@
 * 2022-03-04: Initial draft
 
 ## Status
-DRAFT Not Implemented
+Implemented
 
 ## Abstract
 Selecting a modern, CDN, CI/CD, Repo, Edge-worker, Edge-data driven host underpins the ability to achieve application goals. Low cost of entry plus easy scalability to support a large, future user base.
