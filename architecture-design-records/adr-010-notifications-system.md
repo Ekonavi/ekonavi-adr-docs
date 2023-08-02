@@ -56,6 +56,11 @@ classDiagram
 
 This design allows us to efficiently query all notifications for a specific user. To ensure efficient querying, `user_uuid` will be indexed as it's a foreign key. Also, `uuid` will serve as the primary key for the `notifications` table.
 
+Intial message types will be:
+- activity_report (has frequency setting)
+- game_notice
+- newsletter
+
 ### Query Design
 We will need to use a GraphQL query that checks if there are valid messages to send based on the frequency set by the user and whether the current time is within +/- 2 hours of the time of day the user last logged in. A potential query might look like this:
 
