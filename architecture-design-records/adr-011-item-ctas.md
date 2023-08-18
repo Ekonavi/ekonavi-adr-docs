@@ -21,15 +21,15 @@ The following changes would be needed on the front-end:
 ### Back-end API Changes
 On the back-end, the following changes would be required:
 * Creating new endpoints to handle CTA requests:
-    * \`POST /cta/request\`: To handle request submission.
-    * \`GET /cta/actions\`: To retrieve actions related to the user.
+    * `POST /cta/request`: To handle request submission.
+    * `GET /cta/actions`: To retrieve actions related to the user.
 * Implementing email notifications to both the poster and the requester.
 * Adding a new event type \`cta_request\` in the actions table.
 * Ensuring proper authentication for logged-in users.
 
 ### Database Design
-A new table \`cta_requests\` would be needed with the following fields:
-\`\`\`mermaid
+A new table `cta_requests` would be needed with the following fields:
+```mermaid
 classDiagram
     class CTA_Requests {
         +id (PK)
@@ -40,7 +40,8 @@ classDiagram
         +created_at
         +updated_at
     }
-\`\`\`
+```
+
 This design captures the CTA requests along with the status and type of action.
 
 ### Suggested CTA Button Labels
@@ -102,4 +103,4 @@ Additional fields that might be needed in future extensions for various item typ
 
 ### References
 * [OAuth Integration Guide](https://oauth.net/)
-* [Email Notification Service Documentation](https://example.com/email-service)
+* [Email Notification Service Documentation](https://github.com/Ekonavi/ekonavi-adr-docs/blob/main/architecture-design-records/adr-010-notifications-system.md)
