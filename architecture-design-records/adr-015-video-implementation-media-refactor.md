@@ -116,6 +116,39 @@ After evaluating the pros and cons, the decision was made to use individual rows
 
 After evaluating the pros and cons, we chose to go with a **Media Uploader with Sorting and Progress Bar** for a better UX even though more complex. Ultimately, we should delight our users even if it takes our devs twice as long to implement.
 
+## Pros and Cons between Up/Down Arrows and Drag/Drop for File Sorting
+
+### Up/Down Arrows
+
+#### Pros
+
+- **Intuitive UX**: Clearly signifies the direction in which an item will move.
+- **Mobile-Friendly**: Easier to tap an arrow button on mobile than to drag and drop.
+- **Simplicity**: Easier and quicker to implement compared to drag/drop.
+- **Error Handling**: Less prone to accidental rearrangement.
+
+#### Cons
+
+- **Manual Iteration**: For long lists, clicking multiple times can be cumbersome.
+
+### Drag/Drop
+
+#### Pros
+
+- **Quick Movement**: Good for quickly reordering elements, especially in long lists.
+- **Interactive UX**: Visually engaging and can be more satisfying to use.
+
+#### Cons
+
+- **Implementation Complexity**: Requires more code and handling edge cases.
+- **Error Prone**: Easier to misdrag, especially on smaller screens.
+- **Mobile Challenges**: More challenging to implement in a mobile-friendly manner.
+
+### Recommendation
+
+Given our criteria, Up/Down arrows seem like the better option. They are simpler to implement, more mobile-friendly, and less prone to user error.
+
+
 ## Suggested Code Structure
 
 Given the potential risks and limitations of generating a UUID on the client-side, such as collision risks and security concerns, we recommend creating a stub post first on the server. The UUID for the object will be generated and returned from the database, to be populated in the form as the user fills it out.
