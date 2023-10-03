@@ -2,6 +2,7 @@
 
 ## Changelog
 * 2022-03-09: Initial draft
+* 2023-10-03: Link to ADR 017
 
 ## Status
 Implemented
@@ -60,7 +61,7 @@ For example, these are some words that would need to be reserved in each languag
 * Usernames at a profile root i.e. `example.com/profile/username` or `example.com/p/username`
 
 ## Decision
-* Usernames at web root per profile `example.com/username`, manage a reserved words list
+* Usernames at web root per profile `example.com/username`, manage a [reserved words list](https://github.com/Ekonavi/ekonavi-adr-docs/blob/main/architecture-design-records/adr-017-route-reservations-and-shortlinks.md)
 
 ## Consequences
 
