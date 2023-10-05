@@ -2,6 +2,7 @@
 
 ## Changelog
 * 2023-09-19: Initial draft
+* 2023-10-05: Vanity URL Research 
 
 ## Status
 DRAFT Not Implemented
