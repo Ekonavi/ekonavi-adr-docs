@@ -75,6 +75,31 @@ async function makeShort(req: Request, res: Response) {
 ## Conclusion
 The implementation strategy of using `/anycode` at the apex level with Cloudflare caching and a database table (`routes`) offers a high-speed, reliable, and maintainable solution for shortlink functionalities. The `/make-short` endpoint will serve as the backend logic for creating new shortlinks and populating them in both the database and Cloudflare cache. This design balances performance and maintainability while keeping the URL structure simple and intuitive.
 
+## Research suggests Vanity URLs instead of codes should be used for shortlinks
+
+### 1. Bitly’s Science of the Shortened URL Report:
+
+Bitly, a popular URL shortening service, analyzed the click rates of its URLs and found that branded short domains increased the click-through rate (CTR) by up to 34% compared to generic bit.ly links.
+
+### 2. Marketing Sherpa's Case Study:
+
+In a case study, Marketing Sherpa found that descriptive URLs increased click-through rates by 15-25% over non-descriptive ones.
+
+### 3. HubSpot Analysis:
+
+HubSpot analyzed the effect of URL length on sharing and found that URLs under 60 characters had a higher distribution rate. However, this isn't a direct comparison between descriptive and coded URLs but indicates a preference for shorter URLs on platforms like Twitter, where character count matters.
+
+### 4. Suspicion of Shortened URLs:
+
+A study by the University of Greenwich indicated that users are often wary of clicking shortened URLs. 91% of the participants in the study indicated they'd be hesitant to click on a shortened URL in an email from an unknown sender. This suggests that while shortened URLs are useful, context matters. In situations where trust is paramount, descriptive URLs might be more effective.
+
+### 5. SEO Impact:
+
+Backlinko's analysis of one million Google search results found that URLs with keywords (descriptive URLs) had a slight SEO advantage over non-descriptive URLs. However, this advantage is relatively minor compared to other SEO factors.
+
+## Addendum to Conclusion
+System should allow for the generation and association of both unique short codes and vanity URLS. Vanity links will start with username and then post slug. If the username has not been set, the user's ref_code will substitute. 
+
 ## References
 1. [Next.js Documentation](https://nextjs.org/docs)
 2. [Cloudflare Cache API Documentation](https://developers.cloudflare.com/cache/how-to/cache-api)
