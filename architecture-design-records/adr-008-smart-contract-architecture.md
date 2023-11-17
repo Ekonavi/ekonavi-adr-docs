@@ -67,6 +67,7 @@ However, if the XRP EVM sidechain comes to fruition, there may no longer be a ne
 - Multi-signature support in XRP allows multiple parties to jointly control an account and authorize transactions.
 - It enhances security by requiring multiple signers to approve a transaction before it can be submitted to the ledger.
 
+## Cosmos Current State
 Cosmos IBC operates differently, using CosmWasm for smart contracts, which allows writing smart contracts in Rust. As of now, there are discussions and plans for EVM compatibility within the Cosmos ecosystem, but these are not as mature as the established EVM chains.
 
 ### Pros
@@ -91,7 +92,7 @@ Given these factors, Polygon stands out as an EVM-compatible chain that offers t
 
 ## Opportunistic Development with EVM Contracts
 
-The future potential for EVM contracts to be supported across multiple blockchains, including Ripple's upcoming EVM sidechain and possibly within the Cosmos IBC ecosystem, makes developing on EVM a strategic move.
+The future potential for EVM contracts to be supported across multiple blockchains, including Ripple's upcoming EVM sidechain and possibly within the Cosmos IBC Evmos ecosystem, makes developing on EVM a strategic move.
 
 ### Future Compatibility:
 - **Ripple's EVM Sidechain**: Ripple's development of an EVM sidechain may allow EVM smart contracts to run within the XRP ecosystem, providing broader reach and integration.
@@ -202,11 +203,6 @@ ERC-6551 introduces a significant enhancement to NFT functionality by providing 
 
 ## Conclusion
 The EVM ecosystem offers the best option due to its maturity, wide adoption, and extensive list of compatible chains. Ripple’s upcoming EVM sidechain and the current Hooks system present interesting opportunities, but they lack the maturity and ecosystem of EVM. Cosmos IBC and Evmos are promising for future integrations and operability but do not currently match the EVM's level of ecosystem development and solidity support.
-
-## TDD REQUIREMENTS
-- Test for cross-chain compatibility and smart contract migration between EVM-compatible chains.
-- Evaluate Ripple's Hooks system and upcoming EVM sidechain for performance and feature set.
-- Monitor developments in the Cosmos ecosystem for EVM compatibility initiatives.
 
 ## References
 - EVM compatibility lists from Ethereum development resources.
